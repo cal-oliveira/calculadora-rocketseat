@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">
+            <div id="last-calc">
+                0
+            </div>
+            <div id="result">
+                <img src="./assets/equals.svg" alt="sinal de igual">
+                <span id="number">0</span>
+            </div>
+        </div>
+        <div id="keyboard">
+            <button onclick="ce()" class="secondary">CE</button>
+            <button onclick="c()">C</button>
+            <button onclick="porcent()">%</button>
+            <button onclick="insertOperation('/')" class="tertiary"><img src="./assets/divide.svg" alt="divide"></button>
+            <button onclick="insertNumber('7')">7</button>
+            <button onclick="insertNumber('8')">8</button>
+            <button onclick="insertNumber('9')">9</button>
+            <button onclick="insertOperation('*')" class="tertiary"><img src="./assets/multiply.svg" alt=""></button>
+            <button onclick="insertNumber('4')">4</button>
+            <button onclick="insertNumber('5')">5</button>
+            <button onclick="insertNumber('6')">6</button>
+            <button onclick="insertOperation('-')" class="tertiary"><img src="./assets/minus.svg" alt=""></button>
+            <button onclick="insertNumber('1')">1</button>
+            <button onclick="insertNumber('2')">2</button>
+            <button onclick="insertNumber('3')">3</button>
+            <button onclick="insertOperation('+')" class="tertiary"><img src="./assets/plus.svg" alt=""></button>
+            <button><img src="./assets//plusMinus.svg" alt=""></button>
+            <button onclick="insertNumber('0')">0</button>
+            <button></button>
+            <button onclick="result()" class="quartiary"><img src="./assets/equals-white.svg" alt=""></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
